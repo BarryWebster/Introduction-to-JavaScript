@@ -20,6 +20,11 @@ Do the following:
    HINT: no function required
 */
 
+var votingAge = 21;
+if (votingAge >= 18) {
+  console.log ('true');
+}
+
 
 
 /*
@@ -33,6 +38,12 @@ Do the following:
    HINT: no function required
 */
 
+var name = 'Barry';
+var lastName = 'Webster';
+
+if (name === 'Webster') {
+  console.log ('Mr. $(lastName)');
+}
 
 
 
@@ -48,6 +59,10 @@ Do the following:
    HINT: look up the Number method
 */
 
+var Year = '1999'
+if (Year = '1999') {
+  console.log(1999);
+}
 
 
 
@@ -76,8 +91,8 @@ Do the following:
  3. Return the newly calculated age
 */
 
-function dogYears(/*add your code here*/){
-  /*add your code here*/
+function dogYears(humanYears){
+  return humanYears * 7;
 }
 
 
@@ -109,8 +124,31 @@ Puppies less than 1 year
 NOTE: If done correctly, a weight of 15 lbs and age of 1 year would return 0.44999999999999996
 */  
 
-function hungryDog(/*add your code here*/){
-  /*add your code here*/
+function hungryDog(dogYear, dogPounds){
+  if (dogYear >= 1 && dogPounds <= 5) {
+    return dogPounds*.05;
+  }
+  else if (dogYear >= 1 && dogPounds === 6 <= 10) { 
+    return dogPounds*.04;
+  }
+  else if (dogYear >= 1 && dogPounds === 11 <= 15) {
+    return dogPounds*.03;
+  }
+  else if (dogYear >= 1 && dogPounds === 11 <= 15) {
+    return dogPounds*.03;
+    }
+  else if (dogYear >= 1 && dogPounds >=15) {
+    return dogPounds*.02;
+  }
+  else if (dogYear === .57 >= .33) {
+    return dogPounds*.05;
+  }
+  else if (dogYear === .9 >= .58) {
+    return dogPounds*.04;
+  }
+  else if (dogYear === .32 >= .17) {
+    return dogPounds*.1;
+    }
 }
 
 
@@ -137,7 +175,8 @@ HINT: Remember that the order in which we pass in our arguments matters when it 
 */
 
 function game(user, computer){
-  /*add your code here*/
+ 
+  }
 }
 
 
@@ -153,8 +192,8 @@ Using the miles function below do the following:
 3. Return the number of miles
 */
 
-function miles(/*add your code here*/){
-  /*add your code here*/
+function miles(distance){
+  return (distance*.62);
 }
 
 
@@ -167,8 +206,8 @@ Using the feet function below do the following:
 3. Return number of feet
 */
 
-function feet(/*add your code here*/){
-  /*add your code here*/
+function feet(length){
+ return (length/30.48);
 }
 
 
@@ -184,7 +223,7 @@ Using the annoyingSong function below do the following:
 */
 
 function annoyingSong(/*add your code here*/){
-      /*add your code here*/
+  "{number} bottles of soda on the wall, {number} bottles of soda, take one down pass it around {number left over} bottles of soda on the wall"
 }
 
 
